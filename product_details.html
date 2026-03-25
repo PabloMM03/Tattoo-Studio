@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Limited Edition Giclée Print | Neo-Noir Ink</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Newsreader:ital,wght@0,300;0,400;1,300;1,400&amp;family=Inter:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary-fixed": "#1b1c1c",
+                        "inverse-on-surface": "#313030",
+                        "error": "#ffb4ab",
+                        "inverse-primary": "#c00000",
+                        "surface-tint": "#ffb4a8",
+                        "primary-container": "#d70000",
+                        "on-primary-fixed-variant": "#930000",
+                        "surface-container-high": "#2a2a2a",
+                        "secondary-fixed": "#e4e2e1",
+                        "primary": "#ffb4a8",
+                        "on-tertiary-container": "#edebeb",
+                        "on-surface-variant": "#e8bcb5",
+                        "on-primary": "#690000",
+                        "surface-dim": "#131313",
+                        "primary-fixed-dim": "#ffb4a8",
+                        "on-primary-fixed": "#410000",
+                        "on-error-container": "#ffdad6",
+                        "on-background": "#e5e2e1",
+                        "inverse-surface": "#e5e2e1",
+                        "secondary": "#c8c6c5",
+                        "on-tertiary": "#303030",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "error-container": "#93000a",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "surface-bright": "#3a3939",
+                        "surface-container-highest": "#353534",
+                        "surface": "#131313",
+                        "on-surface": "#e5e2e1",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "on-secondary": "#303030",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-container": "#201f1f",
+                        "on-primary-container": "#ffe6e2",
+                        "background": "#131313",
+                        "tertiary": "#c8c6c6",
+                        "secondary-container": "#474746",
+                        "surface-container-low": "#1c1b1b",
+                        "surface-variant": "#353534",
+                        "on-error": "#690005",
+                        "primary-fixed": "#ffdad4",
+                        "outline-variant": "#5e3f3a",
+                        "tertiary-fixed": "#e4e2e1",
+                        "outline": "#af8781",
+                        "on-secondary-fixed-variant": "#474746",
+                        "tertiary-container": "#6b6a6a",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "on-secondary-container": "#b7b5b4"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Newsreader"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Newsreader', serif;
+        }
+
+        .text-gradient-red {
+            background: linear-gradient(to bottom right, #d70000, #930000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn-primary-gradient {
+            background: linear-gradient(to right, #d70000, #930000);
+        }
+    </style>
+</head>
+
+<body class="bg-surface selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 w-full z-50 flex justify-between items-center px-8 h-20 max-w-screen-2xl mx-auto bg-neutral-900/60 backdrop-blur-md">
+        <div class="text-2xl font-bold tracking-tighter uppercase text-neutral-100 font-headline">Neo-Noir Ink</div>
+        <div class="hidden md:flex gap-12 items-center">
+            <a class="text-neutral-400 font-medium hover:text-neutral-100 transition-all duration-300 ease-in-out font-label uppercase tracking-widest text-[10px]"
+                href="#">Portfolio</a>
+            <a class="text-neutral-400 font-medium hover:text-neutral-100 transition-all duration-300 ease-in-out font-label uppercase tracking-widest text-[10px]"
+                href="#">Artists</a>
+            <a class="text-red-600 font-bold border-b-2 border-red-600 pb-1 font-label uppercase tracking-widest text-[10px]"
+                href="#">Shop</a>
+            <a class="text-neutral-400 font-medium hover:text-neutral-100 transition-all duration-300 ease-in-out font-label uppercase tracking-widest text-[10px]"
+                href="#">Studio</a>
+        </div>
+        <div class="flex items-center gap-6">
+            <div class="hidden lg:block relative">
+                <span
+                    class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-neutral-500">search</span>
+                <input
+                    class="bg-surface-container border-none focus:ring-1 focus:ring-primary-container text-sm py-2 pl-10 pr-4 w-48 font-label"
+                    placeholder="Search..." type="text" />
+            </div>
+            <button class="relative hover:text-red-500 transition-all duration-300 ease-in-out">
+                <span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+                <span class="absolute -top-2 -right-2 bg-primary-container text-[8px] px-1.5 py-0.5 font-bold">2</span>
+            </button>
+        </div>
+    </nav>
+    <main class="pt-32 pb-24 px-8 max-w-screen-2xl mx-auto">
+        <!-- Breadcrumbs -->
+        <nav class="mb-12 flex items-center gap-4 font-label uppercase tracking-widest text-[10px] text-neutral-500">
+            <a class="hover:text-red-600" href="#">Home</a>
+            <span class="material-symbols-outlined !text-[12px]">chevron_right</span>
+            <a class="hover:text-red-600" href="#">Shop</a>
+            <span class="material-symbols-outlined !text-[12px]">chevron_right</span>
+            <span class="text-on-surface">Limited Edition Giclée Print</span>
+        </nav>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+            <!-- Product Image Section -->
+            <div class="lg:col-span-7 space-y-8">
+                <div class="relative aspect-[3/4] bg-surface-container overflow-hidden group">
+                    <img alt="Limited Edition Print"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Monochromatic surrealist tattoo art print featuring intricate linework and heavy black ink shading on high-texture ivory paper gallery lighting"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAXV1RgHJr_w2xuoRYw6gsPiXFAc2RTz2q3QHtXFBW826utQ_1HUPC3DWdrpz8yX9M45fBmrh1yA7hp7WpHq-yfzJB33mXzGyGK_BmFV-Se63uOoUEJ-gmZQoFNG0smxNbbDDVVTPZm3lzPLJM1DNX82clTi3tk3Cs2obtoJdp2MKtfj_IADYZKYIqPJm_d_MHrKwxJ6ovfhcql73dnM8S2p_9Q17o0aeqW6B7igeMsBRDHrJYc4hUgxU5gJ4AI5zeOM8o2h3vEy0" />
+                    <div class="absolute top-6 left-6 bg-surface-container-lowest/80 backdrop-blur-md px-4 py-2">
+                        <span class="font-label uppercase tracking-widest text-[10px] text-primary">Limited Release
+                            (1/50)</span>
+                    </div>
+                </div>
+                <!-- Secondary Views -->
+                <div class="grid grid-cols-4 gap-4">
+                    <div
+                        class="aspect-square bg-surface-container overflow-hidden cursor-pointer opacity-50 hover:opacity-100 transition-opacity">
+                        <img alt="Detail 1" class="w-full h-full object-cover"
+                            data-alt="Close-up of fine charcoal linework on thick cotton rag paper showing the grain of the print material"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBov8rHvssvDYAMn83gSRJQIKzY6qzsP86pSx7yKXhmns6DVH03H-hZ2-p3RRKZlF6hPzDB3fX4XfBzqhkXARaI_xsoadPsF1z5LKj7jKO69klszSiTtmo0U3KzS0Egbgp3IjVDUlwAsKA_4ccghKZOtpNrlAQDp--wJIyFVABjXMN-7LwylaH3DFCauBHGGZ5jFMwBPgVcv7q6F3_AqkN5j7vSRU006bRNjXnOlrWkZabNO6SY3gxEIVIRCH--GgehIujnf5NX2cw" />
+                    </div>
+                    <div
+                        class="aspect-square bg-surface-container overflow-hidden cursor-pointer opacity-50 hover:opacity-100 transition-opacity">
+                        <img alt="Detail 2" class="w-full h-full object-cover"
+                            data-alt="The hand-signed artist signature in metallic ink on the bottom corner of a black and white art print"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7yFE0on6-dQom3DynTkKiecHYyoqcd42-h74YKwopHzOLH8yyU6nRnKda-u4dyIibz2E1ov6JpY-hTSxTDa-oo57xgV7o--wIfN0VASQAQEq88MLO9z-PD6t_nUJdHXdrlKwiqDZhsYU3Ny5hlwV7S1ftb9EratyBc3oZUoawcTAR9e3a40ESejZamsQcn83PWz1VMzvWPDl6Yw5QUke3ntrEaDeTIRqgt11dadSei2yA98WLc-ZrGcMty6OLZtB4dT9HCbT-RHQ" />
+                    </div>
+                    <div
+                        class="aspect-square bg-surface-container overflow-hidden cursor-pointer opacity-50 hover:opacity-100 transition-opacity">
+                        <img alt="Detail 3" class="w-full h-full object-cover"
+                            data-alt="Minimalist framed artwork hanging on a dark concrete wall with dramatic shadows and spotlighting"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3htA-XTEQPoij8-TjxPBv94oi0pgXrEu4JUmRMUUIYfYY-s8y81g5wk_X8yyhhxCrARUWrWQ4nX6-osP65AQo3uSUW67eca23Sa9omZ4APKIgU90L1LipGibZvPmTGs-HaPfZIgBUQsjlGDokLh3TnUitjpsn5wWAwLhUydMfUyrEZ4CO2fCMeg23wni-hZ0JVvpPpcU9YbAUbtABk0BbnsztWDp0JCyYoaYSTOUHhkt8T7LIVxVPG1NjQhL18eLqDc0XkOUOJy4" />
+                    </div>
+                    <div
+                        class="aspect-square bg-surface-container overflow-hidden cursor-pointer opacity-50 hover:opacity-100 transition-opacity">
+                        <img alt="Detail 4" class="w-full h-full object-cover"
+                            data-alt="Art print packaging including a black wax-sealed certificate of authenticity on premium cardstock"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3Q5UlT8HOR6MKzIwbEkQFatf2Q5UQCuJCie_8Q2HL_I_slol_8gX9SLIycjoDvByVOXVRuy7iC-NOo4G8fYnruOCmRDVRDuP25TbWAjJo2N1ag_NWTTLCBtddGmnuokNQeiIrQK-wNjzp0FVVg8IF1731hubWBzjg8NsqqRVTnTSefKvRGBdPd9GfwsL4QaiGFyXL2_nqj6uP_3pcQGQx7yePaQteqJwSD03jPDajsB9wUMP9Dn4VJFSS55tAF3rEnxw0y3SwyFE" />
+                    </div>
+                </div>
+            </div>
+            <!-- Product Info Section -->
+            <div class="lg:col-span-5 flex flex-col pt-4">
+                <div class="mb-2">
+                    <span class="font-label uppercase tracking-widest text-[10px] text-neutral-500">Edition: Obsidian
+                        Series</span>
+                </div>
+                <h1 class="font-headline text-5xl font-bold tracking-tighter uppercase mb-6 leading-tight">Limited
+                    Edition<br />Giclée Print</h1>
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="font-body text-4xl italic text-on-surface">€120</span>
+                    <span class="font-label text-[10px] uppercase tracking-widest text-neutral-500">VAT Included</span>
+                </div>
+                <div class="prose prose-invert mb-10">
+                    <p class="font-body text-lg italic text-neutral-400 leading-relaxed">
+                        A haunting exploration of permanence and the void. This archival-grade giclée print captures the
+                        raw, visceral energy of Neo-Noir's signature blackwork. Each piece is individually curated for
+                        the Obsidian Gallery, ensuring the deep blacks remain eternal.
+                    </p>
+                </div>
+                <!-- Specifications Bento -->
+                <div class="grid grid-cols-2 gap-px bg-neutral-800/30 mb-10">
+                    <div class="bg-surface p-6">
+                        <span
+                            class="font-label uppercase tracking-widest text-[10px] text-neutral-500 block mb-2">Dimensions</span>
+                        <span class="font-headline font-medium text-on-surface">18 x 24 inches</span>
+                    </div>
+                    <div class="bg-surface p-6">
+                        <span class="font-label uppercase tracking-widest text-[10px] text-neutral-500 block mb-2">Paper
+                            Type</span>
+                        <span class="font-headline font-medium text-on-surface">310gsm Cotton Rag</span>
+                    </div>
+                    <div class="bg-surface p-6">
+                        <span
+                            class="font-label uppercase tracking-widest text-[10px] text-neutral-500 block mb-2">Authentication</span>
+                        <span class="font-headline font-medium text-on-surface">Artist Signed &amp; Embossed</span>
+                    </div>
+                    <div class="bg-surface p-6">
+                        <span
+                            class="font-label uppercase tracking-widest text-[10px] text-neutral-500 block mb-2">Packaging</span>
+                        <span class="font-headline font-medium text-on-surface">Obsidian Tube Case</span>
+                    </div>
+                </div>
+                <!-- Interaction Area -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-6">
+                        <div class="flex border border-neutral-800 bg-surface-container-lowest">
+                            <button class="p-4 hover:text-red-600 transition-colors">
+                                <span class="material-symbols-outlined">remove</span>
+                            </button>
+                            <input
+                                class="w-12 bg-transparent border-none text-center font-headline font-bold focus:ring-0"
+                                readonly="" type="number" value="1" />
+                            <button class="p-4 hover:text-red-600 transition-colors">
+                                <span class="material-symbols-outlined">add</span>
+                            </button>
+                        </div>
+                        <div class="flex-1">
+                            <button
+                                class="w-full btn-primary-gradient py-5 font-headline font-bold uppercase tracking-widest text-on-primary-container hover:scale-[1.02] active:scale-[0.98] transition-all">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    <button
+                        class="w-full border border-neutral-800 py-4 font-label uppercase tracking-widest text-[10px] text-neutral-400 hover:text-on-surface transition-colors flex items-center justify-center gap-2">
+                        <span class="material-symbols-outlined !text-[14px]">favorite</span>
+                        Save to Wishlist
+                    </button>
+                </div>
+                <!-- Shipping / Returns Info -->
+                <div class="mt-12 pt-8 border-t border-neutral-800/50 space-y-4">
+                    <div class="flex justify-between items-center group cursor-pointer">
+                        <span
+                            class="font-label uppercase tracking-widest text-[10px] text-neutral-400 group-hover:text-on-surface">Shipping
+                            &amp; Logistics</span>
+                        <span
+                            class="material-symbols-outlined text-neutral-600 group-hover:text-red-600">arrow_forward</span>
+                    </div>
+                    <div class="flex justify-between items-center group cursor-pointer">
+                        <span
+                            class="font-label uppercase tracking-widest text-[10px] text-neutral-400 group-hover:text-on-surface">Returns
+                            &amp; Authenticity</span>
+                        <span
+                            class="material-symbols-outlined text-neutral-600 group-hover:text-red-600">arrow_forward</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Related Products Section -->
+        <section class="mt-40">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <span class="font-label uppercase tracking-widest text-[10px] text-red-600 block mb-2">Curated
+                        Selection</span>
+                    <h2 class="font-headline text-4xl font-bold tracking-tighter uppercase">Related Works</h2>
+                </div>
+                <a class="font-label uppercase tracking-widest text-[10px] text-neutral-400 hover:text-red-600 border-b border-neutral-800 pb-1"
+                    href="#">View Collection</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Related Item 1 -->
+                <div class="group">
+                    <div class="aspect-[4/5] bg-surface-container overflow-hidden mb-6">
+                        <img alt="Related Product 1"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            data-alt="Dark abstract oil painting with heavy impasto textures in shades of black and deep charcoal on a square canvas"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWrKYMChmerMO0aFrxFwKAQ2J9loZT5YnPt2Vj54trmDhVkc_iqtQC2kF5E5kFZ0k6rXp3zAup8wqTI612zOv885rk45xNL3dyEnMI07NtN339DlJnHV5qp3p1aocSteYozSyD4SvWr6gouctA62sXMg-ZRiy9qkNeq9IMDjYK828aucgzAW7z-Nj_3yaR0gWeaP6mNTjmlSvBexdRKXmVqVjJW6bAQNaePdiT7-RjvXgM_sNo3lKEG8jvrCwQRLJWPVjw-AY8Qbc" />
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-headline font-bold uppercase tracking-tight text-lg mb-1">Ink Study No. 04
+                            </h3>
+                            <p class="font-body italic text-neutral-500">Fine Art Print</p>
+                        </div>
+                        <span class="font-label text-sm text-on-surface">€85</span>
+                    </div>
+                </div>
+                <!-- Related Item 2 -->
+                <div class="group">
+                    <div class="aspect-[4/5] bg-surface-container overflow-hidden mb-6">
+                        <img alt="Related Product 2"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            data-alt="High contrast black and white photograph of an ornate gothic cathedral spire against a pitch black night sky"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzYqHTI1up2JUaP87TFY-plWYwONR5FiPaIKgRhXEw7r-oCiB7NLafm6yIwcdLU6vyt8qKnS9LBr7kIKjDcJ2qPmrFoMGLX0eWXMV_ccPQBQddbfQC5bhUb2zufP7sd0lExSCWxuSHE1jixYCYQH9q7tS3snHrSL8Q39uzmzK2dFgXAnS5ReetIbsqpidmEtIwBcO6WecJkBkNAEjDRhZgRHmAbosmOCKxqPcpi9GDY4MrBAClXbXMvosdVpI-Mbcu6aOZ9dk17Y4" />
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-headline font-bold uppercase tracking-tight text-lg mb-1">Cathedral Skeletal
+                            </h3>
+                            <p class="font-body italic text-neutral-500">Limited Lithograph</p>
+                        </div>
+                        <span class="font-label text-sm text-on-surface">€145</span>
+                    </div>
+                </div>
+                <!-- Related Item 3 -->
+                <div class="group">
+                    <div class="aspect-[4/5] bg-surface-container overflow-hidden mb-6 relative">
+                        <img alt="Related Product 3"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            data-alt="Sleek black artist portfolio case with silver hardware and embossed logo on a minimalist white table"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKjbLX_btk_Afpmw4OEFBHhYqS8KxI2_sNgBxAlfkylGh4ib-MGKiaJ9gBqG5JqkN4CTefHAERVZoL-ljxmGtbmA4KnTciESRQILK-iPFCfEVQ61sQz6lC4SjzUrhpsYhyQwTMUOdDTT9CetWI1hpyQ0agBSE595GC1ZbxDcVUPYx3fn3XIjFgzHbRGVZ9hOG2MLaWJTvRikKGK-HqD3fIEBFqoZT4hAQ-O4K91aWpDxcwgF0y-pf-LCljPNa1aOTSWG8xVd9iqAA" />
+                        <div class="absolute top-4 right-4 bg-primary px-3 py-1">
+                            <span class="font-label text-[8px] uppercase font-bold text-on-primary-fixed">Sold
+                                Out</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-start opacity-60">
+                        <div>
+                            <h3 class="font-headline font-bold uppercase tracking-tight text-lg mb-1">Artist Folio Case
+                            </h3>
+                            <p class="font-body italic text-neutral-500">Collector's Accessory</p>
+                        </div>
+                        <span class="font-label text-sm text-on-surface">€210</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Logo Watermark Mark Overlay -->
+    <div class="fixed bottom-10 right-10 opacity-5 pointer-events-none select-none z-0">
+        <img alt="Brand Watermark" class="w-64 h-auto"
+            data-alt="Faint low-opacity decorative brand logo used as a watermark on a dark background"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2_wHzZo1N6WvcEQTl04E2fz4PojKBry020EifT0ddNFBFfGWAFtmzmKuZLk1HmDUBKRerXUO8xKC6l-zzNKbwvBXXpLq0b4cwV4ohe2ifwkrmZY8n3SmyCG78MKvYAgi8R4n0pZo5G0f6OcOsxMh8PBvnoX8rxMSfTwwakhG0ZxlPlV1ubuBm0Z-7_RjbyeHEkgOctGI4r81xDsSsccGe5t98w7ekNIyGVUvU6_6vpiVqojlvoACkerhilrHmSTE-fuysOxaEOxg" />
+    </div>
+    <!-- Footer -->
+    <footer
+        class="w-full py-16 px-8 flex flex-col md:flex-row justify-between items-start md:items-end gap-8 bg-neutral-950 border-t border-neutral-800/30">
+        <div class="space-y-6">
+            <div class="text-lg font-bold tracking-tighter uppercase text-neutral-500 font-headline">Neo-Noir Ink</div>
+            <p class="font-body text-neutral-400 max-w-sm italic">© 2024 Neo-Noir Ink. All Rights Reserved. Crafted for
+                the Obsidian Gallery.</p>
+        </div>
+        <div class="flex flex-wrap gap-x-12 gap-y-4">
+            <a class="font-label uppercase tracking-widest text-[10px] text-neutral-500 hover:text-red-600 transition-colors duration-200"
+                href="#">Privacy</a>
+            <a class="font-label uppercase tracking-widest text-[10px] text-neutral-500 hover:text-red-600 transition-colors duration-200"
+                href="#">Terms</a>
+            <a class="font-label uppercase tracking-widest text-[10px] text-neutral-500 hover:text-red-600 transition-colors duration-200"
+                href="#">Shipping</a>
+            <a class="font-label uppercase tracking-widest text-[10px] text-neutral-500 hover:text-red-600 transition-colors duration-200"
+                href="#">Returns</a>
+            <a class="font-label uppercase tracking-widest text-[10px] text-neutral-500 hover:text-red-600 transition-colors duration-200"
+                href="#">Contact</a>
+        </div>
+    </footer>
+</body>
+
+</html>

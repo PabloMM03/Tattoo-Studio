@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Gallery | OBSIDIAN</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@300;400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-tint": "#ffb4a8",
+                        "surface-container": "#201f1f",
+                        "surface": "#131313",
+                        "secondary-fixed": "#e4e2e1",
+                        "error-container": "#93000a",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-container-highest": "#353534",
+                        "secondary": "#c8c6c5",
+                        "outline-variant": "#5e3f3a",
+                        "tertiary": "#c8c6c6",
+                        "error": "#ffb4ab",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "inverse-surface": "#e5e2e1",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "on-primary-container": "#ffe6e2",
+                        "on-primary-fixed-variant": "#930000",
+                        "on-error": "#690005",
+                        "tertiary-fixed": "#e4e2e1",
+                        "on-primary": "#690000",
+                        "primary": "#ffb4a8",
+                        "secondary-container": "#474746",
+                        "on-secondary-container": "#b7b5b4",
+                        "surface-container-lowest": "#0e0e0e",
+                        "inverse-primary": "#c00000",
+                        "on-secondary": "#303030",
+                        "tertiary-container": "#6b6a6a",
+                        "primary-fixed": "#ffdad4",
+                        "on-tertiary-container": "#edebeb",
+                        "background": "#131313",
+                        "surface-dim": "#131313",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "surface-bright": "#3a3939",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "primary-container": "#d70000",
+                        "surface-container-low": "#1c1b1b",
+                        "on-background": "#e5e2e1",
+                        "on-surface-variant": "#e8bcb5",
+                        "on-primary-fixed": "#410000",
+                        "outline": "#af8781",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "surface-variant": "#353534",
+                        "primary-fixed-dim": "#ffb4a8",
+                        "on-secondary-fixed-variant": "#474746",
+                        "on-error-container": "#ffdad6",
+                        "on-surface": "#e5e2e1",
+                        "on-tertiary": "#303030",
+                        "inverse-on-surface": "#313030"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Newsreader"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .neo-gradient {
+            background: linear-gradient(to bottom right, #d70000, #930000);
+        }
+
+        .masonry-grid {
+            columns: 1;
+            gap: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .masonry-grid {
+                columns: 2;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .masonry-grid {
+                columns: 3;
+            }
+        }
+
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopAppBar -->
+    <header class="bg-neutral-950/60 backdrop-blur-xl fixed top-0 w-full z-50">
+        <nav class="flex justify-between items-center px-8 h-20 w-full max-w-screen-2xl mx-auto">
+            <div class="text-2xl font-bold tracking-tighter text-red-600 font-headline uppercase">
+                OBSIDIAN
+            </div>
+            <div class="hidden md:flex items-center gap-12 font-headline tracking-tight uppercase">
+                <a class="text-neutral-400 font-medium hover:text-neutral-200 transition-colors"
+                    href="index.html">Home</a>
+                <a class="text-red-600 font-bold border-b-2 border-red-600 pb-1" href="#">Gallery</a>
+                <a class="text-neutral-400 font-medium hover:text-neutral-200 transition-colors"
+                    href="about_&_contact.html">About</a>
+            </div>
+            <a href="booking_&_appoinment.html"
+                class="neo-gradient text-on-primary-container font-headline uppercase px-6 py-2.5 text-sm font-bold tracking-widest scale-95 active:duration-150 transition-all duration-300 hover:brightness-110">
+                Book Now
+            </a>
+        </nav>
+    </header>
+    <main class="pt-32 pb-24 px-6 md:px-12 max-w-screen-2xl mx-auto">
+        <!-- Page Header -->
+        <div class="mb-20 space-y-4">
+            <h1 class="font-headline text-6xl md:text-8xl font-bold tracking-tighter uppercase leading-[0.9]">
+                The <span
+                    class="text-primary-container italic font-body font-normal normal-case">Obsidian</span><br />Collection
+            </h1>
+            <p class="text-secondary max-w-xl text-lg md:text-xl font-light opacity-80 leading-relaxed">
+                A definitive archive of permanent artistry. Where precision meets the permanence of ink.
+            </p>
+        </div>
+        <!-- Filter Bar -->
+        <div class="flex flex-wrap items-center gap-x-8 gap-y-4 mb-16 border-b border-outline-variant/10 pb-8">
+            <button class="font-headline uppercase text-sm tracking-widest font-bold text-primary-container">All
+                Works</button>
+            <button
+                class="font-headline uppercase text-sm tracking-widest font-medium text-neutral-500 hover:text-on-surface transition-colors">Realism</button>
+            <button
+                class="font-headline uppercase text-sm tracking-widest font-medium text-neutral-500 hover:text-on-surface transition-colors">Blackwork</button>
+            <button
+                class="font-headline uppercase text-sm tracking-widest font-medium text-neutral-500 hover:text-on-surface transition-colors">Traditional</button>
+            <button
+                class="font-headline uppercase text-sm tracking-widest font-medium text-neutral-500 hover:text-on-surface transition-colors">Fine
+                Line</button>
+        </div>
+        <!-- Portfolio Grid -->
+        <div class="masonry-grid">
+            <!-- Item 1 -->
+            <div class="masonry-item group relative overflow-hidden bg-surface-container cursor-crosshair">
+                <img class="w-full grayscale hover:grayscale-0 transition-all duration-700 ease-in-out scale-105 group-hover:scale-100"
+                    data-alt="high contrast macro shot of detailed realism lion tattoo on human forearm with sharp shading and ink depth"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkK9bX5nn-YXVLQ1ohJb7kRKskshJRzY4sjIrVKmG9TCizO73oNCIJAKUTdnMcS6Dm7GWiNvpQqpLBKoTpIzAIA5oCewcilnjGxg_DfrWj0ur0SsZAU4Dt0XiswR9fLdz03giI2nyKitLmrnTFCumGlgb-a3WcCRXUlDwWj47KRK0nSdV9-lGagUIg0Sdm9dAd-ztxbAc7jdXOGYd7yZtnV4Oh9mkJpCAw_Kv913DpOlU91dpQDzpZfjXycSSl4lnVYhZ8nLish-I" />
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                    <span
+                        class="font-label text-xs uppercase tracking-[0.2em] text-primary-container mb-2">Realism</span>
+                    <h3 class="font-headline text-2xl font-bold uppercase tracking-tighter">The Monarch</h3>
+                    <p class="font-body italic text-secondary-fixed/60 mt-1">October 2023</p>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="masonry-item group relative overflow-hidden bg-surface-container cursor-crosshair">
+                <img class="w-full grayscale hover:grayscale-0 transition-all duration-700 ease-in-out scale-105 group-hover:scale-100"
+                    data-alt="geometric blackwork tattoo design with heavy black ink and intricate dotwork patterns on a clean studio background"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp4ZQh2eBIGxToUrx-tPEqlBVVd7hCuCD7x9knYT8G1CcZG0z-6MabnQJJz5bXsP7_M_4Nk4uu1Su8FuF98Lp5vesGdCl3UL8tuKiKAD67NDGYp3uHGMeb7sNSe_oi4XzQqF-phc_Am9ICdzDMq4ddQUciYvWWMEavIABhi6GvNk123K5cLIZMJ30dOCAaMuzoklIuqyEV_5BJ_ngVDP9FZQOn3P05vRuKJWBZYOwp2ggCNg_1k9dq43Jxi-zu-fInpfLfxq4IWDc" />
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                    <span
+                        class="font-label text-xs uppercase tracking-[0.2em] text-primary-container mb-2">Blackwork</span>
+                    <h3 class="font-headline text-2xl font-bold uppercase tracking-tighter">Geometric Abyss</h3>
+                    <p class="font-body italic text-secondary-fixed/60 mt-1">December 2023</p>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="masonry-item group relative overflow-hidden bg-surface-container cursor-crosshair">
+                <img class="w-full grayscale hover:grayscale-0 transition-all duration-700 ease-in-out scale-105 group-hover:scale-100"
+                    data-alt="fine line botanical tattoo featuring delicate floral patterns and thin needle work on a pale skin tone"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMVuR6TiyGqNajSEqphDiEuKRz_ZpC0mrcYuKW4uOnzKDjLoBzF93OFS8uyMb910g3_u_vHAF8NSWD2gPpvpZFtkOg5bdYOeOsNVI_jleuidEcIXzmRTcwoHXn5qedSRkqModDnF7dGk4bbzE9NNLXrsK_oYt1Nltea73_d56tLeOoXODikKQTEFO6syrbMT4fnZp1QdLDH_UW7qdePffDoWg9qpG_FvlYytTavyzpyI0aLIm610jH9vw01xtXQz8Y6plrH_OUQPY" />
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                    <span class="font-label text-xs uppercase tracking-[0.2em] text-primary-container mb-2">Fine
+                        Line</span>
+                    <h3 class="font-headline text-2xl font-bold uppercase tracking-tighter">Ephemeral Flora</h3>
+                    <p class="font-body italic text-secondary-fixed/60 mt-1">January 2024</p>
+                </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="masonry-item group relative overflow-hidden bg-surface-container cursor-crosshair">
+                <img class="w-full grayscale hover:grayscale-0 transition-all duration-700 ease-in-out scale-105 group-hover:scale-100"
+                    data-alt="neo-traditional tattoo art of an ornate dagger with bold outlines and saturated red and black tones"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgiQ8JMJkY9N5k57Oe7L1tUmVI6EwdSMHUWivNTV9fDIJOfb48rCUrAgFale89qnhcbiL4CRhTj_b4swh1N8gQITGXCj9Ysyx5tMWJTU0CaKsX2GjaxdmtHiN7TBwRlMMhEia7Wt89WpVmPfHdqxj3av0sjteABVUvxJMHWS2X6JgWVbh3b0PTfmwPbtsWv-__iv49_SLRnNOB7Y8Ve-2e7NG2bgchzPdcbflgJFuETENRpyX4e8H12NCHPT6T3USH6Kt6NQJ-NsU" />
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                    <span
+                        class="font-label text-xs uppercase tracking-[0.2em] text-primary-container mb-2">Traditional</span>
+                    <h3 class="font-headline text-2xl font-bold uppercase tracking-tighter">Crimson Edge</h3>
+                    <p class="font-body italic text-secondary-fixed/60 mt-1">February 2024</p>
+                </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="masonry-item group relative overflow-hidden bg-surface-container cursor-crosshair">
+                <img class="w-full grayscale hover:grayscale-0 transition-all duration-700 ease-in-out scale-105 group-hover:scale-100"
+                    data-alt="dark noir aesthetic tattoo artist working on an intricate piece with dramatic rim lighting in a moody studio"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGCzcIuiJ4SiBSc291Tell9YaqEA3DLpErIEPJilZ-peDnBh88v3-e6-q1nQxjDTMCToPEDvpJVUB4xRX3WpdALLY9XiHecBjGcHTqdR0VIfdCIkDlmuQDCawh97qq5krrDWGlMaaq5GumENtbfiHQujB7ycZHr5zrXU8p16HkMekXo_cPzupAi58QYY0fkZfSNZKOHcT8lQ0nOEQgOXqogR8CgNd4zwBFKWaipXc06lVZYA5PFnyslYxAZk7HLfAoED4FI84Oeu8" />
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                    <span
+                        class="font-label text-xs uppercase tracking-[0.2em] text-primary-container mb-2">Process</span>
+                    <h3 class="font-headline text-2xl font-bold uppercase tracking-tighter">In Progress</h3>
+                    <p class="font-body italic text-secondary-fixed/60 mt-1">Live Archive</p>
+                </div>
+            </div>
+            <!-- Item 6 -->
+            <div class="masonry-item group relative overflow-hidden bg-surface-container cursor-crosshair">
+                <img class="w-full grayscale hover:grayscale-0 transition-all duration-700 ease-in-out scale-105 group-hover:scale-100"
+                    data-alt="detailed realistic portrait tattoo of a classical statue with smooth grey shading and marble texture finish"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD90AJVxvx2heWW__WRUCaFcxUwQspSdGMR-qhqswNgYm65SqumA5vjFHkqdN7ISl9Ss1T1XRWNEQ-r3beYX2ocsgV0yiptTthW7gnocNfPX-d8RyoKUJSGoKSI6Y_RjYAL3vpuh-6LM7bFn2Kd_oeYJyrbHHc4zndBlrEGOVWA8kXLe97EmJJy81PM-KI3fnGdNYFu9TsXjKY8P_wAC-ATa9ABxP63zWf2hFajbFuVhKdUZoJEn47FLXUqHVht1BNn9aSd2mXl0Q8" />
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                    <span
+                        class="font-label text-xs uppercase tracking-[0.2em] text-primary-container mb-2">Realism</span>
+                    <h3 class="font-headline text-2xl font-bold uppercase tracking-tighter">Stone Silence</h3>
+                    <p class="font-body italic text-secondary-fixed/60 mt-1">March 2024</p>
+                </div>
+            </div>
+        </div>
+        <!-- Load More Section -->
+        <div class="mt-24 flex justify-center">
+            <button
+                class="group flex flex-col items-center gap-4 py-8 px-16 border border-outline-variant/20 hover:border-primary-container transition-colors duration-500">
+                <span
+                    class="font-headline uppercase text-sm tracking-[0.3em] font-bold text-neutral-400 group-hover:text-on-surface">Load
+                    More Works</span>
+                <span
+                    class="material-symbols-outlined text-primary-container animate-pulse">keyboard_double_arrow_down</span>
+            </button>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-neutral-900 w-full py-16 px-8 mt-24">
+        <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center text-center md:text-left max-w-screen-2xl mx-auto">
+            <div class="text-xl font-black text-neutral-200 opacity-20 font-headline uppercase">
+                OBSIDIAN
+            </div>
+            <div class="font-newsreader italic text-lg text-red-600 dark:text-red-600 flex justify-center gap-8">
+                <a class="hover:text-red-600 transition-colors text-neutral-500"
+                    href="https://www.instagram.com/andrewsjar98/?hl=es%2F" target="_blank"
+                    rel="noopener noreferrer">Instagram</a>
+                <a class="hover:text-red-600 transition-colors text-neutral-500" href="#">Twitter</a>
+                <a class="hover:text-red-600 transition-colors text-neutral-500" href="#">Contact</a>
+            </div>
+            <div
+                class="font-newsreader italic text-lg text-neutral-500 text-center md:text-right uppercase tracking-widest text-xs opacity-60">
+                © 2026 OBSIDIAN GALLERY. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+    <!-- Watermark Signature (Background Element) -->
+    <div class="fixed -bottom-20 -right-20 opacity-[0.03] pointer-events-none select-none z-[-1]">
+        <h2 class="text-[25rem] font-headline font-black uppercase leading-none">OB</h2>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary-fixed": "#1b1c1c",
+                        "inverse-on-surface": "#313030",
+                        "error": "#ffb4ab",
+                        "inverse-primary": "#c00000",
+                        "surface-tint": "#ffb4a8",
+                        "primary-container": "#d70000",
+                        "on-primary-fixed-variant": "#930000",
+                        "surface-container-high": "#2a2a2a",
+                        "secondary-fixed": "#e4e2e1",
+                        "primary": "#ffb4a8",
+                        "on-tertiary-container": "#edebeb",
+                        "on-surface-variant": "#e8bcb5",
+                        "on-primary": "#690000",
+                        "surface-dim": "#131313",
+                        "primary-fixed-dim": "#ffb4a8",
+                        "on-primary-fixed": "#410000",
+                        "on-error-container": "#ffdad6",
+                        "on-background": "#e5e2e1",
+                        "inverse-surface": "#e5e2e1",
+                        "secondary": "#c8c6c5",
+                        "on-tertiary": "#303030",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "error-container": "#93000a",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "surface-bright": "#3a3939",
+                        "surface-container-highest": "#353534",
+                        "surface": "#131313",
+                        "on-surface": "#e5e2e1",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "on-secondary": "#303030",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-container": "#201f1f",
+                        "on-primary-container": "#ffe6e2",
+                        "background": "#131313",
+                        "tertiary": "#c8c6c6",
+                        "secondary-container": "#474746",
+                        "surface-container-low": "#1c1b1b",
+                        "surface-variant": "#353534",
+                        "on-error": "#690005",
+                        "primary-fixed": "#ffdad4",
+                        "outline-variant": "#5e3f3a",
+                        "tertiary-fixed": "#e4e2e1",
+                        "outline": "#af8781",
+                        "on-secondary-fixed-variant": "#474746",
+                        "tertiary-container": "#6b6a6a",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "on-secondary-container": "#b7b5b4"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Newsreader"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+
+        body {
+            background-color: #131313;
+            color: #E5E2E1;
+            font-family: 'Newsreader', serif;
+        }
+
+        .neo-noir-gradient {
+            background: linear-gradient(to bottom right, #d70000, #930000);
+        }
+
+        .glass-nav {
+            background: rgba(25, 25, 25, 0.6);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+
+<body class="bg-surface selection:bg-primary-container selection:text-on-primary-container">
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-8 h-20 max-w-screen-2xl mx-auto glass-nav">
+        <div class="text-2xl font-bold tracking-tighter uppercase text-neutral-100 font-headline">
+            Neo-Noir Ink
+        </div>
+        <div class="hidden md:flex items-center space-x-12">
+            <a class="text-neutral-400 font-medium hover:text-neutral-100 font-label uppercase tracking-widest text-[10px] transition-all duration-300 ease-in-out"
+                href="#">Portfolio</a>
+            <a class="text-neutral-400 font-medium hover:text-neutral-100 font-label uppercase tracking-widest text-[10px] transition-all duration-300 ease-in-out"
+                href="#">Artists</a>
+            <a class="text-red-600 font-bold border-b-2 border-red-600 pb-1 font-label uppercase tracking-widest text-[10px]"
+                href="#">Shop</a>
+            <a class="text-neutral-400 font-medium hover:text-neutral-100 font-label uppercase tracking-widest text-[10px] transition-all duration-300 ease-in-out"
+                href="#">Studio</a>
+        </div>
+        <div class="flex items-center space-x-6">
+            <button class="text-neutral-100 hover:text-red-500 transition-all">
+                <span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+            </button>
+        </div>
+    </nav>
+    <main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto min-h-screen">
+        <!-- Header Section -->
+        <header class="mb-16 md:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
+            <div class="max-w-2xl">
+                <span class="font-label text-[10px] uppercase tracking-[0.3em] text-primary mb-4 block">Curated
+                    Selection</span>
+                <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-on-surface uppercase">
+                    YOUR COLLECTION
+                </h1>
+            </div>
+            <div class="flex items-center gap-4 border-l border-outline-variant/30 pl-6 h-fit">
+                <img alt="Brand Mark" class="w-12 h-12 grayscale brightness-200 opacity-80"
+                    data-alt="minimalist graphic logo of a stylized ink droplet combined with a geometric neo-noir font icon in high contrast white on black"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2pURx0UtAoC7ECFqfi7_rr6hLZOJ0Kob52FkafAYQI5qZ5uqepQplf6AunPZxRIyj85CVnP1lDraecVxg3VYv3rtBZ8p_wsS-v_WFFm0Kh6tc1r8unwDT9EEACcfXxGLYrvkP91seaOCTXHbI6dlneFo44fnL0QnJBPGWQf5WcCz2cdPSeSVMo9FBpsenGSqsI3RSsV07eiGuqzzd2AOT-PIj_o5NidqwLUFDPWPoKOvtcNMfV5JQee6zIxewDIKUUnA842viKUc" />
+                <div class="font-label text-[10px] uppercase tracking-widest text-secondary">
+                    ITEM COUNT: 03
+                </div>
+            </div>
+        </header>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+            <!-- Cart Items List -->
+            <div class="lg:col-span-8 space-y-12">
+                <!-- Item 1 -->
+                <div class="flex flex-col sm:flex-row gap-8 items-start sm:items-center group">
+                    <div class="w-full sm:w-48 aspect-[3/4] overflow-hidden bg-surface-container-low flex-shrink-0">
+                        <img alt="Art Print"
+                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                            data-alt="high-resolution editorial photograph of a framed black and grey tattoo flash art print on textured paper with dramatic shadows"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3sg7W5hk3hviXOkjkOcovwoxBAVdgg5Lkw-TvFMYOODBdq09z2MJlL-JqgK7jdMASHFsujQPLmVVEYkuJ3s5ErsC8QoPoIF5O__Pjx6Ztd1tVFEIIVxT71l2Xe7aLnipFAGaARZTlPbRvM61cksyqy_8vcu6UZUKcRwfhZs1UhMyJeGUuxEkwGs08dorZMfGTZw7mjl5tFGvEN1icRSlTM-G7VxPAYiKO7j28bnO9pSWLlmdn32ULLVIF8PviUaItcjJ0X3ld72s" />
+                    </div>
+                    <div class="flex-grow flex flex-col sm:flex-row justify-between w-full gap-6">
+                        <div class="space-y-2">
+                            <span class="font-label text-[9px] uppercase tracking-widest text-primary/60">Limited
+                                Edition</span>
+                            <h3 class="font-headline text-2xl font-bold uppercase tracking-tight text-on-surface">The
+                                Obsidian Raven Print</h3>
+                            <p class="font-body italic text-secondary text-lg">18" x 24" Giclée on Heavyweight Vellum
+                            </p>
+                        </div>
+                        <div class="flex flex-row sm:flex-col justify-between items-end gap-4">
+                            <div class="flex items-center bg-surface-container-high px-4 py-2">
+                                <button class="text-secondary hover:text-primary transition-colors"><span
+                                        class="material-symbols-outlined" data-icon="remove">remove</span></button>
+                                <span class="mx-6 font-label text-sm text-on-surface">01</span>
+                                <button class="text-secondary hover:text-primary transition-colors"><span
+                                        class="material-symbols-outlined" data-icon="add">add</span></button>
+                            </div>
+                            <div class="text-right">
+                                <span class="font-headline text-xl font-medium tracking-tight">$145.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="flex flex-col sm:flex-row gap-8 items-start sm:items-center group">
+                    <div class="w-full sm:w-48 aspect-[3/4] overflow-hidden bg-surface-container-low flex-shrink-0">
+                        <img alt="Studio Merch"
+                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                            data-alt="moody editorial product shot of a premium heavyweight black cotton t-shirt with a subtle red embroidered logo on the chest"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzHzUgibUB-F26O_l1pcRa_xsPqJAxVsGuVM_bFs552zrSLynkY2aKzDk7XYicCibLhS0kWVPFsgOkUJEg22lKIIJhIPkFZxGfkMkvDjnnJlW6FXaaoFA4wTal2foDhyr6qgewJF3GFB9AuVxguBetSZdec6sSyn52PPp33k1hKexOAAD9mOyag3yVghiRtIfRhnTzqWjLqMN84NdTExGd59HpQftJtsZ8_hkmD78T59IzbK-6PgPZZO2aXfMRSeq2sNTAiTE_3kY" />
+                    </div>
+                    <div class="flex-grow flex flex-col sm:flex-row justify-between w-full gap-6">
+                        <div class="space-y-2">
+                            <span class="font-label text-[9px] uppercase tracking-widest text-primary/60">Signature
+                                Apparel</span>
+                            <h3 class="font-headline text-2xl font-bold uppercase tracking-tight text-on-surface">
+                                Neo-Noir Heavy Tee</h3>
+                            <p class="font-body italic text-secondary text-lg">Size: Large / Carbon Black</p>
+                        </div>
+                        <div class="flex flex-row sm:flex-col justify-between items-end gap-4">
+                            <div class="flex items-center bg-surface-container-high px-4 py-2">
+                                <button class="text-secondary hover:text-primary transition-colors"><span
+                                        class="material-symbols-outlined" data-icon="remove">remove</span></button>
+                                <span class="mx-6 font-label text-sm text-on-surface">02</span>
+                                <button class="text-secondary hover:text-primary transition-colors"><span
+                                        class="material-symbols-outlined" data-icon="add">add</span></button>
+                            </div>
+                            <div class="text-right">
+                                <span class="font-headline text-xl font-medium tracking-tight">$110.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="flex flex-col sm:flex-row gap-8 items-start sm:items-center group">
+                    <div class="w-full sm:w-48 aspect-[3/4] overflow-hidden bg-surface-container-low flex-shrink-0">
+                        <img alt="Aftercare Kit"
+                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                            data-alt="luxury apothecary style packaging for tattoo aftercare balm in a dark glass jar with minimalist monochrome label"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOQzyta7b2YHGJTLX25TG_WesqceKoBbiXjVZ_VwuSpbeZT7J6hxEsk1G1he2EibP4vn2-NE9RGG2JRIAnTOOqPxavHUmag1zdUGRHLzE1Or0BX2T0lvAh3ReI6t_XHC4Bva32J11dNp-dCeV77g8ecTIneMZPNzscWQvZCKhY_v7yoVOYmtgbUbI-KQDEgfjZekqKBgGkQkuB0gSAoQ6DprmcY3NmXYPP-wS6mfkcOPeA_t64nbFSLuKWU-96446zf23nZol8GJ4" />
+                    </div>
+                    <div class="flex-grow flex flex-col sm:flex-row justify-between w-full gap-6">
+                        <div class="space-y-2">
+                            <span
+                                class="font-label text-[9px] uppercase tracking-widest text-primary/60">Aftercare</span>
+                            <h3 class="font-headline text-2xl font-bold uppercase tracking-tight text-on-surface">
+                                Botanical Ink Salve</h3>
+                            <p class="font-body italic text-secondary text-lg">50ml / Organic Cold-Pressed</p>
+                        </div>
+                        <div class="flex flex-row sm:flex-col justify-between items-end gap-4">
+                            <div class="flex items-center bg-surface-container-high px-4 py-2">
+                                <button class="text-secondary hover:text-primary transition-colors"><span
+                                        class="material-symbols-outlined" data-icon="remove">remove</span></button>
+                                <span class="mx-6 font-label text-sm text-on-surface">01</span>
+                                <button class="text-secondary hover:text-primary transition-colors"><span
+                                        class="material-symbols-outlined" data-icon="add">add</span></button>
+                            </div>
+                            <div class="text-right">
+                                <span class="font-headline text-xl font-medium tracking-tight">$35.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Order Summary Section -->
+            <div class="lg:col-span-4">
+                <div class="bg-surface-container p-8 sticky top-32">
+                    <h2 class="font-headline text-2xl font-bold uppercase tracking-tight mb-8">Summary</h2>
+                    <div class="space-y-6 mb-12">
+                        <div class="flex justify-between items-center">
+                            <span
+                                class="font-label text-[10px] uppercase tracking-widest text-secondary">Subtotal</span>
+                            <span class="font-headline text-lg">$290.00</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span
+                                class="font-label text-[10px] uppercase tracking-widest text-secondary">Shipping</span>
+                            <span class="font-headline text-lg">$15.00</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="font-label text-[10px] uppercase tracking-widest text-secondary">Tax</span>
+                            <span class="font-headline text-lg">$23.20</span>
+                        </div>
+                        <div class="pt-6 border-t border-outline-variant/30 flex justify-between items-end">
+                            <div>
+                                <span
+                                    class="font-label text-[12px] font-bold uppercase tracking-[0.2em] text-on-surface">Total</span>
+                                <p class="text-[9px] text-secondary/60 mt-1 uppercase tracking-widest">VAT Included</p>
+                            </div>
+                            <span class="font-headline text-3xl font-bold text-primary">$328.20</span>
+                        </div>
+                    </div>
+                    <button
+                        class="w-full neo-noir-gradient py-6 font-label text-[12px] font-bold uppercase tracking-[0.3em] text-on-primary-container hover:brightness-110 transition-all flex items-center justify-center gap-3 group">
+                        PROCEED TO CHECKOUT
+                        <span
+                            class="material-symbols-outlined translate-x-0 group-hover:translate-x-2 transition-transform"
+                            data-icon="arrow_forward">arrow_forward</span>
+                    </button>
+                    <div class="mt-8">
+                        <p class="font-body text-sm text-secondary/80 italic leading-relaxed">
+                            Each item is hand-inspected and shipped from our Obsidian Gallery within 48 hours of
+                            purchase.
+                        </p>
+                    </div>
+                    <div class="mt-12 space-y-4">
+                        <div class="flex items-center gap-4 text-secondary/60">
+                            <span class="material-symbols-outlined text-[18px]" data-icon="lock">lock</span>
+                            <span class="font-label text-[9px] uppercase tracking-widest">Secure encrypted
+                                checkout</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-secondary/60">
+                            <span class="material-symbols-outlined text-[18px]"
+                                data-icon="local_shipping">local_shipping</span>
+                            <span class="font-label text-[9px] uppercase tracking-widest">Global tracked shipping</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Continue Shopping CTA -->
+        <div class="mt-24 border-t border-outline-variant/20 pt-12 flex justify-start">
+            <a class="font-label text-[10px] uppercase tracking-widest text-secondary hover:text-on-surface transition-colors flex items-center gap-3"
+                href="#">
+                <span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+                Continue Exploring the Gallery
+            </a>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="w-full py-16 px-8 flex flex-col md:flex-row justify-between items-start md:items-end gap-8 bg-neutral-950 border-t border-neutral-800/30">
+        <div class="space-y-6">
+            <div class="text-lg font-bold tracking-tighter uppercase text-neutral-500 font-headline">Neo-Noir Ink</div>
+            <p class="font-body text-neutral-400 max-w-xs italic text-sm">© 2024 Neo-Noir Ink. All Rights Reserved.
+                Crafted for the Obsidian Gallery.</p>
+        </div>
+        <div class="flex flex-wrap gap-x-12 gap-y-4">
+            <a class="font-label uppercase tracking-widest text-[10px] text-neutral-500 hover:text-red-600 transition-colors"
+                href="#">Privacy</a>
+            <a class="font-label uppercase tracking-widest text-[10px] text-neutral-500 hover:text-red-600 transition-colors"
+                href="#">Terms</a>
+            <a class="font-label uppercase tracking-widest text-[10px] text-neutral-500 hover:text-red-600 transition-colors"
+                href="#">Shipping</a>
+            <a class="font-label uppercase tracking-widest text-[10px] text-neutral-500 hover:text-red-600 transition-colors"
+                href="#">Returns</a>
+            <a class="font-label uppercase tracking-widest text-[10px] text-neutral-500 hover:text-red-600 transition-colors"
+                href="#">Contact</a>
+        </div>
+    </footer>
+    <!-- Background Watermark -->
+    <div
+        class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-[0.03] z-[-1] scale-150">
+        <img alt="Background watermark"
+            data-alt="large translucent logo mark of a modern tattoo studio with sharp geometric lines and minimalist aesthetic"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkdI-LeYnd7DYGY06qEymh4-3AxhFGkUrOmwtNNV4rSXjQXWOokOA0Hk9iZ4PheYG6S_TAnL2v1UL0hi2xwNuKltemsNYi__Ha9IeJ4YLQ6c3bLykfWV7Zr_9dgYxMghIKREARPYF0Nq1vnJ6PfH2cDew2miNNkcvkXIY7Zg5ZVhnzbyFeUeGxq6o130NoK08mxl5L0WoPavb14ud_CBWF3IBAW6aeo0gWWqmbCeKbf2wmTTzEt7WSzRWbOjUs-_1DUg4ryQh4eJM" />
+    </div>
+</body>
+
+</html>
