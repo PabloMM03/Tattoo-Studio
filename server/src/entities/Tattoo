@@ -1,0 +1,33 @@
+{
+  "name": "Tattoo",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "blackwork",
+        "realismo",
+        "tradicional",
+        "geom\u00e9trico",
+        "acuarela",
+        "japon\u00e9s",
+        "minimalista",
+        "otro"
+      ]
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "image_url",
+    "category"
+  ]
+}
