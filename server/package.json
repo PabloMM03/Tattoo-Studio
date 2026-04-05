@@ -1,0 +1,19 @@
+{
+  "name": "tattoo-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Backend para web de tatuajes, reservas y tienda",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.0",
+    "express": "^5.2.1",
+    "mysql2": "^3.20.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
